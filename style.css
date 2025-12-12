@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+/* En tête */
+header {
+    background-color: #d4c4a8;
+    padding: 20px 0;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Logo du site */
+.logo {
+    font-size: 2rem;
+    color: #b32c2c;
+    text-decoration: none;
+}
+/* Menu de navigation en haut*/
+nav {
+    display: flex;
+    gap: 30px;
+}
+.nav-link {
+    color: #2c2c2c;
+    text-decoration: none;
+}
+.nav-link:hover {
+    color: #b32c2c;
+}
+/*Background page accueil) */
+.hero {
+    background: url('../images/background-accueil.jpg') center/cover;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+/* Boutons (reserver table/menu)*/
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+/* Styles des boutons */
+.btn {
+    padding: 15px 35px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.btn-primary {
+    background-color: #b32c2c;
+    color: white;
+}
+.btn-secondary {
+    background-color: #7a7a7a;
+    color: white;
+}
+/* Section (pizza, burger, pasta) */
+.categories {
+    background-color: #d4c4a8;
+    padding: 80px 0;
+}
+.category-card {
+    text-align: center;
+}
+.category-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.category-card h3 {
+    margin-top: 15px;
+    font-size: 1.8rem;
+}
+.category-grid {
+  display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+/* Page contact */
+.contact-section {
+    padding: 60px 0;
+    background-color: #d4c4a8;
+}
+.page-title {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+.title-red {
+    color: #b32c2c;
+}
+.address-block h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+.hours-list {
+    list-style: none;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+}
+.map-container {
+    margin: 40px 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.form-title {
+    font-size: 2rem;
+    margin: 40px 0 30px 0;
+    text-align: center;
+}
+.reservation-form {
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: rgba(255,255,255,0.3);
+    padding: 40px;
+    border-radius: 10px;
+}
+.form-group {
+    margin-bottom: 25px;
+}
+.form-group label {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: Georgia, serif;
+}
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+.btn-submit {
+    width: 100%;
+    background-color: #b32c2c;
+    color: white;
+    padding: 15px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/*Page a propos */
+.apropos-hero {
+background-image: url('../images/background-apropos.jpg');
+    background-position: center;
+    background-size: cover;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.apropos-hero h1 {
+    font-size: 3rem;
+    color: #2c2c2c;
+}
+.histoire-section {
+    background-color: #d4c4a8;
+    padding: 60px 0;
+    text-align: center;
+}
+.histoire-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+.histoire-section p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.video-section {
+    background-color: #e8dcc4;
+    padding: 60px 0;
+    text-align: center;
+}
+.video-section h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+.video-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+.chef-section {
+    background-color: #d4c4a8;
+    padding: 60px 0;
+}
+.chef-content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.chef-text {
+    flex: 1;
+}
+.chef-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+.chef-text p {
+    font-size: 1.2rem;
+}
+.chef-image {
+    flex: 1;
+    text-align: center;
+}
+.chef-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+/*Page menu*/
+.menu-section {
+    background-color: #d4c4a8;
+    padding: 60px 0;
+}
+.menu-title {
+    font-size: 4rem;
+    color: #b32c2c;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.menu-category {
+    margin-bottom: 50px;
+}
+.category-title {
+    font-size: 2rem;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #2c2c2c;
+    padding-bottom: 10px;
+}
+.menu-item {
+    margin-bottom: 30px;
+}
+.item-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+.item-name {
+    font-size: 1.3rem;
+    color: #b32c2c;
+}
+.item-price {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.item-description {
+    font-size: 1rem;
+    color: #4a4a4a;
+}
+/*Pied de page */
+footer {
+    background-color: #d4c4a8;
+    padding: 40px 0;
+    text-align: center;
+    border-top: 3px solid #b32c2c;
+}
+.footer-logo {
+    font-size: 2rem;
+    color: #b32c2c;
+    margin-bottom: 20px;
+}
+.footer-info p {
+    margin: 5px 0;
+    font-size: 1.1rem;
+}
